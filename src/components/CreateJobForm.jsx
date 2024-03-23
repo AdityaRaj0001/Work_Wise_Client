@@ -29,7 +29,7 @@ const CreateJobForm = ({ fetchAdminJobs }) => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post("/api/job/create", {
+      const response = await axios.post("https://work-wise.onrender.com/api/job/create", {
         title,
         description,
         image,

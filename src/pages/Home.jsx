@@ -27,7 +27,7 @@ const Home = () => {
   };
   const fetchJobs = async () => {
     try {
-      const response = await axios.get("/api/job/getjobs");
+      const response = await axios.get("https://work-wise.onrender.com/api/job/getjobs");
       const data = response.data;
       Dispatch(setJobs(data.jobs));
     } catch (error) {

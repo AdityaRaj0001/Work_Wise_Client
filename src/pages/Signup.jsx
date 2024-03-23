@@ -32,7 +32,7 @@ export default function Signup() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post("/api/auth/signup", {
+      const response = await axios.post("https://work-wise.onrender.com/api/auth/signup", {
         username: username,
         email: email,
         password: password,

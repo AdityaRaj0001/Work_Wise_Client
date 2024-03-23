@@ -32,7 +32,7 @@ export default function Signin() {
     dispatch(signInStart());
 
     try {
-      const response = await axios.post("/api/auth/signin", {
+      const response = await axios.post("https://work-wise.onrender.com/api/auth/signin", {
         email: email,
         password: password,
       });

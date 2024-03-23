@@ -41,7 +41,7 @@ export function ManageJobCard({
   const handledelete = async () => {
     try {
       const response = await axios.delete(
-        `/api/job/deletejob/${_id}/${userId}`
+        `https://work-wise.onrender.com/api/job/deletejob/${_id}/${userId}`
       );
       Dispatch(deleteJobSuccess(_id));
     } catch (error) {
@@ -51,7 +51,7 @@ export function ManageJobCard({
   const handleupdate = async () => {
 
     try {
-      const response = await axios.post(`/api/job/updatejob/${_id}/${userId}`, {
+      const response = await axios.post(`https://work-wise.onrender.com/api/job/updatejob/${_id}/${userId}`, {
         company: newcompany,
         title: newtitle,
         description: newdescription,
